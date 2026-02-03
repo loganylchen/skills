@@ -7,11 +7,11 @@ description: GitHub Knowledge Base for managing and querying local GitHub reposi
 
 ## Overview
 
-Manage a local cache of GitHub repositories for rapid analysis and querying. This skill maintains a repository index at `@/home/logan/Projects/github-kb/CLAUDE.md` with one-sentence summaries for quick reference.
+Manage a local cache of GitHub repositories for rapid analysis and querying. This skill maintains a repository index at `@/home/logan/Projects/skills/github-kb/CLAUDE.md` with one-sentence summaries for quick reference.
 
 ## Local Repository Path
 
-**Default location**: `/home/logan/Projects/github-kb`
+**Default location**: `/home/logan/Projects/skills/github-kb`
 
 If this directory doesn't exist, prompt the user for the correct path and update this skill accordingly.
 
@@ -20,8 +20,8 @@ If this directory doesn't exist, prompt the user for the correct path and update
 ### 1. When User Mentions GitHub/Repo/Repository
 
 1. Check if the query references a specific repository (e.g., "anthropics/claude-code", "the cli-tool repo")
-2. Search the local directory at `/home/logan/Projects/github-kb/` for matching repositories
-3. Read `@/home/logan/Projects/github-kb/CLAUDE.md` for repository summaries
+2. Search the local directory at `/home/logan/Projects/skills/github-kb/` for matching repositories
+3. Read `@/home/logan/Projects/skills/github-kb/CLAUDE.md` for repository summaries
 
 ### 2. Repository Found Locally
 
@@ -32,8 +32,8 @@ If this directory doesn't exist, prompt the user for the correct path and update
 ### 3. Repository Not Found
 
 1. Offer to clone the repository using `git clone`
-2. Clone to `/home/logan/Projects/github-kb/<repo-name>/`
-3. Update `@/home/logan/Projects/github-kb/CLAUDE.md` with repository summary
+2. Clone to `/home/logan/Projects/skills/github-kb/<repo-name>/`
+3. Update `@/home/logan/Projects/skills/github-kb/CLAUDE.md` with repository summary
 
 ## Using the gh Command
 
